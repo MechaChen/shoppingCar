@@ -4,20 +4,25 @@ const cart = $(".cart");
 const pdBtns = $(".pdItem .cartBtn");
 console.log(pdBtns);
 
-// 對每個商品做點擊事件
-pdItems.click(function(e) {
+// 對每個商品下的按鈕做點擊事件
+pdBtns.click(function(e) {
   // 避免 <a> 標籤跳轉頁面
   e.preventDefault();
+  // 先找到每個按鈕對應的商品
   // 取得商品的寬、高、X、Y 座標
-  const pdW = $(this).width();
-  const pdH = $(this).height();
-  const pdO = $(this).offset();
+  const thisImg = $(this)
+    .parent()
+    .parent()
+    .find("img");
+  const pdW = thisImg.width();
+  const pdH = thisImg.height();
+  const pdO = thisImg.offset();
   const pdL = pdO.left;
   // 此處取的的高為頁面頂端到商品的高
   // 所以原本高要減掉捲軸卷下來的高度
   // 才是頁面上看到商品的高度
   const pdT = pdO.top - window.scrollY;
-  const pdSrc = $(this).attr("src");
+  const pdSrc = thisImg.attr("src");
 
   // 取得購物車的寬、高、X、Y 座標
   const cartW = cart.width();
