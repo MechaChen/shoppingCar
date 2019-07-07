@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  /* outline: 1px solid saddlebrown; */
+}
+.style {
+  -webkit-appearance: none;
+}
+body {
+  overflow-x: hidden;
+}
+/* reset phone num */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
+span {
+  font-family: verdana;
+  color: #696868;
+  letter-spacing: 1px;
+}
+
+a {
+  display: block;
+}
+/* 字體 */
+h2 {
+  font-family: changa one;
+  color: #474858;
+}
+h3 {
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 100;
+}
+p {
+  font-family: verdana;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #696868;
+  line-height: 1.5;
+}
+.copyC {
+  font-family: verdana;
+}
+
+/* 滑鼠 */
+
+#cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #474858;
+  box-sizing: border-box;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 999;
+}
+.navMenu li:hover a {
+  background-color: #aaa;
+  opacity: 0.8;
+  border-radius: 30px;
+}
+@media screen and (max-width: 767px) {
+  #cursor {
+    display: none;
+  }
+}
+
+/* 按鈕 */
+a {
+  font-weight: bolder;
+}
+.buttonB {
+  align-self: center;
+  transition: all 0.5s ease;
+  font-size: 13px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-sizing: border-box;
+  border: solid 2px #778899;
+  transition: 0.5s;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 10px;
+  color: black;
+  box-shadow: 2px 2px 1px 2px #aaaaaa;
+}
+.buttonS {
+  align-self: center;
+  transition: all 0.5s ease;
+  font-size: 13px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-sizing: border-box;
+  border: solid 2px #778899;
+  transition: 0.5s;
+  display: inline-block;
+  padding: 3px 10px;
+  margin: 10px 0;
+  color: black;
+  box-shadow: 2px 2px 1px 2px #aaaaaa;
+}
+.button img {
+  width: 6px;
+  vertical-align: middle;
+}
+.button {
+  transform: translateX(0);
+}
+.button:hover {
+  transform: translateX(2px);
+  transition: 0.6s;
+}
+.buttonS:hover {
+  box-shadow: 2px 2px 1px 2px transparent;
+}
+.buttonB:hover {
+  box-shadow: 2px 2px 1px 2px transparent;
+}
+
+/* webLocation */
+.here {
+  text-decoration: underline;
+  color: #aaa;
+}
+
+/* 隔線 */
+
+.col-1 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 8.333333%;
+}
+.col-2 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 16.666666%;
+}
+.col-3 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 25%;
+}
+.col-4 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 33.333333%;
+}
+.col-5 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 41.666666%;
+}
+.col-6 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 50%;
+}
+.col-7 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 58.333333%;
+}
+.col-8 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 66.666666%;
+}
+.col-9 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 75%;
+}
+.col-10 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 83.333333%;
+}
+.col-11 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 91.666666%;
+}
+.col-12 {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .col-xl-1 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 8.333333%;
+  }
+  .col-xl-2 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 16.666666%;
+  }
+  .col-xl-3 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 25%;
+  }
+  .col-xl-4 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 33.333333%;
+  }
+  .col-xl-5 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 41.666666%;
+  }
+  .col-xl-6 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .col-xl-7 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 58.333333%;
+  }
+  .col-xl-8 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 66.666666%;
+  }
+  .col-xl-9 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 75%;
+  }
+  .col-xl-10 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 83.333333%;
+  }
+  .col-xl-11 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 91.666666%;
+  }
+  .col-xl-12 {
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+}

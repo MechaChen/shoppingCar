@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="resetShare.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Changa+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div class="headerBox">
+      <input type="checkbox" id="menuBg" />
+      <header>
+        <div class="logoBox">
+          <div class="logo">
+            <a href="index.html"><h1>Black and White</h1></a>
+          </div>
+          <label class="hb" for="menuBg">
+            <div class="hamburger-menu">
+              <span class="bar1"></span>
+              <span class="bar"></span>
+            </div>
+          </label>
+        </div>
+        <nav class="navMenu">
+          <ul>
+            <li class="mainMenu">
+              <a href="">Products</a>
+            </li>
+            <li class="mainMenu">
+              <a href="">Showrooms</a>
+            </li>
+            <li class="mainMenu">
+              <a href="">Concept</a>
+            </li>
+            <li class="mainMenu">
+              <a href="">Stores</a>
+            </li>
+            <div class="shopIcon">
+              <li class="member">
+                <a href="">
+                  <img src="PNGs/nav_profile_icon.png" alt="member" />
+                </a>
+              </li>
+              <li class="cart">
+                <a href="">
+                  <img src="PNGs/nav_icon_cart.png" alt="cart" />
+                </a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="topBtnBox">
+          <div class="topBtnContent">
+            <a href="#">
+              <img src="PNGs/footer_arrow.png" alt="topArrow" />
+              <p>Top</p>
+            </a>
+          </div>
+        </div>
+        <div class="icon">
+          <a href=""><img src="PNGs/footer_fb_icon.png" alt="fb"/></a>
+          <a href=""><img src="PNGs/footer_ig_icon.png" alt="ig"/></a>
+        </div>
+        <p class="phoneNum ">Tel:68-2938-4494</p>
+        <div class="copyC">© Black & White 2019</div>
+      </div>
+    </footer>
+    <script>
+      //滑鼠
+      var cursor = document.getElementById("cursor");
+
+      document.addEventListener("mousemove", function(e) {
+        var scroller = window.pageYOffset;
+
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + "px";
+        cursor.style.top = y + scroller + "px";
+      });
+
+      window.onload = init;
+    </script>
+  </body>
+</html>

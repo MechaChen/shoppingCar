@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="./dist/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="dist/assets/owl.theme.default.min.css" />
+    <title>Black & Whate | Showroom</title>
+
+    <link rel="shortcut icon" href="PNGs/web_logo.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Changa+One"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="resetShare.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="cursor"></div> -->
+    <div class="headerBox">
+      <input type="checkbox" id="menuBg" />
+      <header>
+        <div class="logoBox">
+          <div class="logo">
+            <a href="index.html"><h1>Black and White</h1></a>
+          </div>
+          <label class="hb" for="menuBg">
+            <div class="hamburger-menu">
+              <span class="bar1"></span>
+              <span class="bar"></span>
+            </div>
+          </label>
+        </div>
+        <nav class="navMenu">
+          <ul>
+            <li class="mainMenu">
+              <a href="prdocutList.html">Products</a>
+            </li>
+            <li class="mainMenu here">
+              <a href="showroom.html">Showrooms</a>
+            </li>
+            <li class="mainMenu">
+              <a href="concept.html">Concept</a>
+            </li>
+            <li class="mainMenu">
+              <a href="stores.html">Stores</a>
+            </li>
+            <div class="shopIcon">
+              <li class="member">
+                <a href="">
+                  <img src="PNGs/nav_profile_icon.png" alt="member" />
+                </a>
+              </li>
+              <li class="cart">
+                <a href="">
+                  <img src="PNGs/nav_icon_cart.png" alt="cart" />
+                </a>
+              </li>
+            </div>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <div class="itemPage">
+      <ol class="breadcrumb col-xl-12 col-12">
+        <li>
+          <a href="index.html"> Home</a>
+        </li>
+        <li>
+          <span>&nbsp;/&nbsp;</span>
+        </li>
+        <li class="here">
+          <a href="showroom.html">Showrooms</a>
+        </li>
+      </ol>
+    </div>
+    <div class="life"></div>
+    <!-- slider -->
+    <div class="showroomPage">
+      <h3 class="title">Showrooms</h3>
+      <div class="srSliderbox">
+        <div class="nbBox">
+          <img class="nbBg" src="showroom/notebook_BG.png" alt="" />
+        </div>
+        <!-- 內容 -->
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="srPage frontPage">
+              <div class="bookName">
+                <h2>Black & White</h2>
+              </div>
+              <div class="srBookPic srBookPicGirl">
+                <img src="./showroom/showroom_girl.gif" alt="" />
+              </div>
+            </div>
+          </div>
+          <!-- 內容二 -->
+          <div class="item srBg">
+            <div class="srPage ">
+              <div class="srBookTitle">
+                <h2>Living Room Collection</h2>
+              </div>
+              <div class="srBookPic pdPicBox">
+                <div class="srBookPicPd">
+                  <a href="item.html"
+                    ><img
+                      src="showroom/showroom_grey_monday.png"
+                      alt="greyMonday"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="srBookPicdetail">
+                <a href="item.html"
+                  ><h2>Grey Monday</h2>
+                  <span
+                    >AUD$420 <br />Designer:Rebecca <br />H100 x W80 x D84
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="item"><span class="fake">COMMING SOON...</span></div>
+        </div>
+      </div>
+      <div class="related">
+        <h3 class="pageTitle">Related Photos</h3>
+        <div class="relatedPic">
+          <div class="rPic1 col-xl-5 col-12">
+            <a data-fancybox="gallery" href="showroom/showroom_show1.jpg">
+              <img src="showroom/showroom_show1.jpg" alt="srShow"
+            /></a>
+          </div>
+          <div class="rPic2 col-xl-5 col-12">
+            <a data-fancybox="gallery" href="showroom/showroom_show2.jpg">
+              <img src="showroom/showroom_show2.jpg" alt="srShow"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footerContainer">
+        <div class="topBtnBox">
+          <div class="topBtnContent">
+            <a href="#">
+              <img src="PNGs/footer_arrow.png" alt="topArrow" />
+              <p>Top</p>
+            </a>
+          </div>
+
+          <div class="icon">
+            <a href="#"><img src="PNGs/footer_fb_icon.png" alt="fb"/></a>
+            <a href="#"><img src="PNGs/footer_ig_icon.png" alt="ig"/></a>
+          </div>
+          <p class="phoneNum ">Tel:68-2938-4494</p>
+          <div class="copyC">© Black & White 2019</div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 封面 -->
+
+    <script src="/dist/jquery-3.4.1.min.js"></script>
+    <script src="dist/owl.carousel.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+          navigation: true,
+          navText: [
+            "<img src='./PNGs/new_in_arrow_left.png'>",
+            "<img src='./PNGs/new_in_arrow_right.png'>"
+          ],
+          items: 2,
+          loop: true,
+          margin: 2,
+          dots: false,
+          nav: true,
+          autoplay: false,
+          responsive: {
+            0: {
+              items: 1
+            },
+            600: {
+              items: 1
+            },
+            1000: {
+              items: 1
+            }
+          }
+        });
+      });
+    </script>
+    <script>
+      //       //防止手機動
+      //       var navbar=document.getElementById("header");
+      // navbar.addEventListener('touchmove',function(e){e.preventDefault();
+      // })
+    </script>
+  </body>
+</html>
